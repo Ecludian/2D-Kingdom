@@ -163,7 +163,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &274057164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -321,7 +321,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &398852774
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -562,7 +562,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &771297402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -693,6 +693,7 @@ GameObject:
   - component: {fileID: 1750285193}
   - component: {fileID: 1750285192}
   - component: {fileID: 1750285191}
+  - component: {fileID: 1750285196}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -720,7 +721,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1750285192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -813,7 +814,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5461080209500765292, guid: 5b766951ad1bdbf4db4ad19848fa7263, type: 3}
+  m_Sprite: {fileID: 6828707226395220610, guid: 5b766951ad1bdbf4db4ad19848fa7263, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -838,6 +839,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1750285196
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750285190}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 709b59f48d829364087d7a8c27500c41, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1880378077
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +871,7 @@ GameObject:
   - component: {fileID: 1880378080}
   - component: {fileID: 1880378079}
   - component: {fileID: 1880378078}
+  - component: {fileID: 1880378083}
   m_Layer: 0
   m_Name: Zombie_Normal
   m_TagString: Untagged
@@ -878,7 +899,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1880378079
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -996,6 +1017,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1880378083
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880378077}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5d2158d2fae06364e8e44f9ac88771db, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1885070747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,7 +1076,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1885070749
 BoxCollider2D:
   m_ObjectHideFlags: 0

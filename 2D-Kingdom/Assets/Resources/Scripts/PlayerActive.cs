@@ -7,6 +7,11 @@ public class PlayerActive : MonoBehaviour
     public UnitState State;
     public bool isAlive;
     public float moveSpeed;
+    public float healthPoint;
+    public float magicPoint;
+    public float staminaPoint;
+    public float atkSpeed;
+
 
     private Animator playerAnim;
     private AudioSource playerAudio;
@@ -39,6 +44,22 @@ public class PlayerActive : MonoBehaviour
             playerAudio.Stop();
         }
     }
+    private void Player_Death()
+    {
+        if (healthPoint <= 0) 
+        { 
+
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            Player_Movement(Vector2.zero);
+            healthPoint = 0;
+            State = UnitState.Dead;
+            playerAnim.SetTrigger("Dead");
+            State = UnitState.Dead;
+            isAlive = false;
+
+
+        }
+    }
 
     private void Start()
     {
@@ -46,7 +67,7 @@ public class PlayerActive : MonoBehaviour
         playerAudio = GetComponent<AudioSource>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (isAlive)
         {
@@ -54,12 +75,10 @@ public class PlayerActive : MonoBehaviour
             moveaway.x = Input.GetAxis("Horizontal");
             moveaway.y = Input.GetAxis("Vertical");
             Player_Movement(moveaway);
+         
         }
+        Player_Death();
     }
 
 }
 
-public enum UnitState
-{
-    Idle, Move, Attack, Cast, Dead
-}

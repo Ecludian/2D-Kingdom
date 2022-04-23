@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class EnemyActive : MonoBehaviour
@@ -12,14 +13,41 @@ public class EnemyActive : MonoBehaviour
     public float moveSpeed;
     public float healthPoint;
     public float atkSpeed;
+   
 
     private Animator enemyAnim;
     private AudioSource enemyAudio;
+    private float attackTime;
 
-    private void Enemy_Stance()
+    private void Enemy_Attack()
+    {
+        var player = Target.GetComponent<PlayerActive>();
+        var gm = GameManager.Instance;
+        if(attackTime == 0 && player.isAlive)
+        {
+            enemyAnim.SetTrigger("Attack");
+            if(Creep == EnemySet.Witch)
+            {
+                var location = RandomPosition(transform.position);
+                var vfx = Instantiate(gm.Origin_Smoke, location, Quaternion.identity);
+                Instantiate(gm.Origin_SkeletonCreep, location, Quaternion.identity);
+                Destroy(vfx, 1f);
+            }
+            else
+            {
+                enemyAudio.Play();
+            }
+            //Cooldown 
+            attackTime = atkSpeed;
+        }
+    }
+
+    private void Enemy_Stance(Action attack = null)
     {
         enemyAnim.SetBool("isMoving", false);
         State = UnitState.Idle;
+        attack?.Invoke();
+
     }
 
     private void Enemy_Movement(bool isForward)
@@ -73,6 +101,14 @@ public class EnemyActive : MonoBehaviour
         }
     }
 
+    private Vector3 RandomPosition(Vector3 basepos)
+    {
+        float x = UnityEngine.Random.Range(-1f, 1f);
+        float y = UnityEngine.Random.Range(-1f, 1f);
+        var rand = basepos + new Vector3(x, y);
+        return rand;
+    }
+
     private void SetAnimParameter(Vector2 vector)
     {
         enemyAnim.SetFloat("AxisX", vector.x);
@@ -83,15 +119,16 @@ public class EnemyActive : MonoBehaviour
     {
         enemyAnim = GetComponent<Animator>();
         enemyAudio = GetComponent<AudioSource>();
+        Target = GameObject.Find("Player").transform;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (isAlive)
         {
             var distance = Vector3.Distance(transform.position, Target.position);
-            if (distance < 1.5f && isForward) {
-                Enemy_Stance();
+            if (distance < 1f && isForward) {
+                Enemy_Stance(Enemy_Attack);
             }
             else
             {
@@ -104,7 +141,7 @@ public class EnemyActive : MonoBehaviour
                 {
                     if(distance < 6f)
                     {
-                        Enemy_Stance();
+                        Enemy_Stance(Enemy_Attack);
                     }
                     if(distance < 5f)
                     {
@@ -116,11 +153,17 @@ public class EnemyActive : MonoBehaviour
                 }
             }
         }
+
+        if(attackTime > 0f)
+        {
+            attackTime -= Time.deltaTime;
+            State = UnitState.Attack;
+        }
+        if(attackTime < 0f)
+        {
+            attackTime = 0f;
+            State = UnitState.Idle;
+        }
         Enemy_Death();
     }
-}
-
-public enum EnemySet
-{
-    Deafult, Damaged, Native, Warrior, Witch, Skeleton
 }

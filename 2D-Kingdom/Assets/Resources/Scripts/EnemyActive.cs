@@ -29,7 +29,7 @@ public class EnemyActive : MonoBehaviour
             if(Creep == EnemySet.Witch)
             {
                 var location = RandomPosition(transform.position);
-                var vfx = Instantiate(gm.Origin_Smoke, location, Quaternion.identity);
+                var vfx = Instantiate(gm.Origin_Smoke, location + new Vector3(0f, -0.56f, 0f), Quaternion.identity);
                 Instantiate(gm.Origin_SkeletonCreep, location, Quaternion.identity);
                 Destroy(vfx, 1f);
             }
@@ -88,6 +88,37 @@ public class EnemyActive : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        if (!gameObject.scene.isLoaded) return;
+        var gm = GameManager.Instance;
+        switch (Creep)
+        {
+            case EnemySet.Damaged:
+                var vfx_fire1 = Instantiate(gm.Fire_1, transform.position, Quaternion.identity);
+                Destroy(vfx_fire1, GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
+                gm.killPoint++;
+                break;
+            case EnemySet.Native:
+                //Instantiate(gm.Zombie_Wounded, transform.position, Quaternion.identity);
+                gm.gamePoint += 5;
+                break;
+            case EnemySet.Warrior:
+                //Instantiate(gm.Zombie_Normal, transform.position, Quaternion.identity);
+                gm.gamePoint += 30;
+                break;
+            case EnemySet.Witch:
+                //Instantiate(gm.Zombie_Wounded, transform.position, Quaternion.identity);
+                gm.gamePoint += 15;
+                break;
+            case EnemySet.Skeleton:
+                var vfx_fire2 = Instantiate(gm.Fire_2, transform.position, Quaternion.identity);
+                Destroy(vfx_fire2, GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
+                gm.gamePoint += 5;
+                break;
+        }
+    }
+
     private void ChangeDirection(Vector2 direction, bool isForward)
     {
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)){
@@ -119,13 +150,14 @@ public class EnemyActive : MonoBehaviour
     {
         enemyAnim = GetComponent<Animator>();
         enemyAudio = GetComponent<AudioSource>();
-        Target = GameObject.Find("Player").transform;
+      
     }
 
     private void FixedUpdate()
     {
         if (isAlive)
         {
+            Target = GameObject.Find("Player").transform;
             var distance = Vector3.Distance(transform.position, Target.position);
             if (distance < 1f && isForward) {
                 Enemy_Stance(Enemy_Attack);

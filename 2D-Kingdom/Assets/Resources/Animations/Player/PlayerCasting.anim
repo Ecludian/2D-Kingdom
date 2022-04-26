@@ -22,7 +22,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -30,8 +30,8 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.16666667
-        value: 1
+        time: 1.3333334
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -42,7 +42,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Abilities/Blessing/LightUp
+    path: Abilities/DominusLapidis/LightUp
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -58,7 +58,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1
+        time: 0.5
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -67,8 +67,8 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.35
-        value: 0
+        time: 1.4833333
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -79,7 +79,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Abilities/Blessing/Shout
+    path: Abilities/DominusLapidis/Shout
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves:
@@ -111,22 +111,24 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 4349840160727075967, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
-    - time: 0.33333334
+    - time: 0.16666667
       value: {fileID: 1955064042672373225, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
-    - time: 0.5
+    - time: 0.33333334
       value: {fileID: -353327608208750220, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
-    - time: 0.6666667
+    - time: 0.53333336
       value: {fileID: 4785793104939984787, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
-    - time: 0.8333333
+    - time: 0.6666667
       value: {fileID: -2161801808503819482, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
-    - time: 1.0166667
+    - time: 0.8333333
       value: {fileID: 4430261218291500886, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
-    - time: 1.1666666
+    - time: 1
       value: {fileID: -8610735656256579415, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
+    - time: 1.1833333
+      value: {fileID: 1955064042672373225, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
     - time: 1.3333334
       value: {fileID: -2501775288655640329, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
     attribute: m_Sprite
-    path: Abilities/Blessing/LightUp
+    path: Abilities/DominusLapidis/LightUp
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -137,14 +139,14 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3084540311
+      path: 2023609842
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 376896051
+      path: 1836299817
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -158,7 +160,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 3084540311
+      path: 2023609842
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -182,6 +184,7 @@ AnimationClip:
     - {fileID: -2161801808503819482, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
     - {fileID: 4430261218291500886, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
     - {fileID: -8610735656256579415, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
+    - {fileID: 1955064042672373225, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
     - {fileID: -2501775288655640329, guid: 77c315c1e9c3319478353f239cbe86d5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
@@ -209,7 +212,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -217,8 +220,8 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.16666667
-        value: 1
+        time: 1.3333334
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -229,7 +232,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Abilities/Blessing/LightUp
+    path: Abilities/DominusLapidis/LightUp
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -245,7 +248,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1
+        time: 0.5
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -254,8 +257,8 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.35
-        value: 0
+        time: 1.4833333
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -266,7 +269,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Abilities/Blessing/Shout
+    path: Abilities/DominusLapidis/Shout
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []

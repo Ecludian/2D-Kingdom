@@ -18,8 +18,8 @@ TagManager:
   - UI
   - Player
   - Enemies
-  - 
-  - 
+  - Items
+  - Character Collision Blocker
   - 
   - 
   - 
@@ -48,4 +48,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Items
+    uniqueID: 554023505
     locked: 0

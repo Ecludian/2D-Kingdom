@@ -15,14 +15,22 @@ public class EnemyActive : MonoBehaviour
     public float atkSpeed;
     public GameObject spawner;
     public int slotNum;
-   
 
+    private Rigidbody2D rb;
     private Animator enemyAnim;
     private AudioSource enemyAudio;
     private float attackTime;
     private GenerateActive generator;
     private GameObject creep;
 
+  
+    private void Awake()
+    {
+       
+        enemyAnim = GetComponent<Animator>();
+        enemyAudio = GetComponent<AudioSource>();
+
+    }
     private void Enemy_Attack()
     {
         var player = Target.GetComponent<PlayerActive>();
@@ -195,12 +203,7 @@ public class EnemyActive : MonoBehaviour
         enemyAnim.SetFloat("AxisY", vector.y);
     }
 
-    private void Awake()
-    {
-        enemyAnim = GetComponent<Animator>();
-        enemyAudio = GetComponent<AudioSource>();
-      
-    }
+ 
 
     private void Update()
     {
@@ -252,4 +255,5 @@ public class EnemyActive : MonoBehaviour
         }
         
     }
+   
 }

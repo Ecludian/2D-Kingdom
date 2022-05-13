@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3861014647089056406}
   - component: {fileID: 3861014647089056405}
   - component: {fileID: 3861014647089056400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Power_Green
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: -8555345526181502084, guid: 76f7d57f67eae5b4eba8c006592d144e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,7 +94,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

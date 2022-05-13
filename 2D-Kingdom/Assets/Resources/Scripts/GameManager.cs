@@ -32,13 +32,14 @@ public class GameManager : MonoBehaviour
     public GameObject Zombie_Normal => Resources.Load<GameObject>("Prefabs/Enemies/Zombie_Normal");
      public GameObject Zombie_Miner => Resources.Load<GameObject>("Prefabs/Enemies/Zombie_Miner");
      public GameObject Zombie_Wounded => Resources.Load<GameObject>("Prefabs/Enemies/Zombie_Wounded");
-     public GameObject Witch => Resources.Load<GameObject>("Prefabs/Stuffs/Enemies/Zombie_Mage");
-     public GameObject Skeleton => Resources.Load<GameObject>("Prefabs/Stuff/Enemies/Skeleton");
+     public GameObject Witch => Resources.Load<GameObject>("Prefabs/Enemies/Zombie_Mage");
+     public GameObject Skeleton => Resources.Load<GameObject>("Prefabs/Enemies/Skeleton");
  
 
 
     public int gamePoint;
     public int killPoint;
+    public LevelSet levelPoint;
 
 
 
@@ -107,4 +108,9 @@ public enum DamageState
 public enum ItemSet
 {
     Default, Elixir, Scroll, Power_Red, Power_Green, Power_Blue
+}
+
+public enum LevelSet 
+{
+    Default, Easy, Normal, Hard
 }

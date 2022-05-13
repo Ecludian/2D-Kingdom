@@ -44,10 +44,20 @@ public class PlayerActive : MonoBehaviour
     //public float attackRange = 0.5f;
     public LayerMask enemyLayer;
 
+    //Dash System Variables
+    /*public float dashSpeed;
+    private float dashTime;
+    public float startDashTime;
+    private int direction;
+    private float lastClickTime;
+    private float timeSinceLastClick;
+    private const float DOUBLE_CLICK_TIME = .2f;*/
+    
+
 
     public float[] castTime { get; set; }
 
-
+    private Rigidbody2D rb;
     private Animator playerAnim;
     private AudioSource playerAudio;
     private AudioSource attackAudio;
@@ -57,6 +67,22 @@ public class PlayerActive : MonoBehaviour
     private Vector2 direcPos;
     private float attackTime;
 
+    private void Start()
+    {
+ 
+        rb = GetComponent<Rigidbody2D>();
+        playerAnim = GetComponent<Animator>();
+        playerAudio = GetComponent<AudioSource>();
+        attackAudio = transform.Find("Rogue").GetComponent<AudioSource>();
+        skill_1Audio = transform.Find("Abilities").Find("ArchSword").GetComponent<AudioSource>();
+        skill_2Audio = transform.Find("Abilities").Find("DominusLapidis").GetComponent<AudioSource>();
+        skill_2_ShoutAudio = transform.Find("Abilities").Find("DominusLapidis").Find("Shout").GetComponent<AudioSource>();
+        castTime = new float[] { 0f, 0f, 0f };
+
+        //dash
+        /*  dashTime = startDashTime;*/
+
+    }
 
     private void Player_Attack()
     {
@@ -166,17 +192,6 @@ public class PlayerActive : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        playerAnim = GetComponent<Animator>();
-        playerAudio = GetComponent<AudioSource>();
-        attackAudio = transform.Find("Rogue").GetComponent<AudioSource>();
-        skill_1Audio = transform.Find("Abilities").Find("ArchSword").GetComponent<AudioSource>();
-        skill_2Audio = transform.Find("Abilities").Find("DominusLapidis").GetComponent<AudioSource>();
-        skill_2_ShoutAudio = transform.Find("Abilities").Find("DominusLapidis").Find("Shout").GetComponent<AudioSource>();
-        castTime = new float[] { 0f, 0f, 0f };
-
-    }
 
     //run per frames, for input, timer, non-pHysic object
     private void Update()
@@ -227,7 +242,90 @@ public class PlayerActive : MonoBehaviour
                     castTime[2] = cooldownSkills[2];
                 }
             }
+            //DASH SYSTEM(NEED SOME REWORKING)
+            /*if(direction == 0)
+            {
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    bool A = true;
+                    timeSinceLastClick = Time.time - lastClickTime;
+                    if(timeSinceLastClick <= DOUBLE_CLICK_TIME && A == true) {
+                        direction = 1;
+                    }
+                    else
+                    {
+                        A = false;
+                    }
+                    lastClickTime = Time.time;
+                }
+
+                else if (Input.GetKeyDown(KeyCode.D))
+                {
+                    bool B = true;
+                    timeSinceLastClick = Time.time - lastClickTime;
+                    if (timeSinceLastClick <= DOUBLE_CLICK_TIME && B == true)
+                    {
+                        direction = 2;
+                    }
+                    else
+                    {
+                        B = false;
+                    }
+                    lastClickTime = Time.time;
+                }
+                else if (Input.GetKeyDown(KeyCode.W))
+                {
+                    timeSinceLastClick = Time.time - lastClickTime;
+                    if (timeSinceLastClick <= DOUBLE_CLICK_TIME)
+                    {
+                        direction = 3;
+                    }
+                    lastClickTime = Time.time;
+                }
+                else if (Input.GetKeyDown(KeyCode.S))
+                {
+                    timeSinceLastClick = Time.time - lastClickTime;
+                    if (timeSinceLastClick <= DOUBLE_CLICK_TIME)
+                    {
+                        direction = 4;
+                    }
+                    lastClickTime = Time.time;
+                }
+            }
+
+            else
+            {
+                if(dashTime <= 0)
+                {
+                    direction = 0;
+                    dashTime = startDashTime;
+                    rb.velocity = Vector2.zero;
+                }
+                else
+                {
+                    dashTime -= Time.deltaTime;
+
+                    if(direction == 1)
+                    {
+                        rb.velocity = Vector2.left * dashSpeed;
+                    }
+                    else if(direction == 2)
+                    {
+                        rb.velocity = Vector2.right * dashSpeed;
+                    }
+                    else if (direction == 3)
+                    {
+                        rb.velocity = Vector2.up * dashSpeed;
+                    }
+                    else if (direction == 4)
+                    {
+                        rb.velocity = Vector2.down * dashSpeed;
+                    }
+                }
+            }*/
+  
         }
+       
         magicRecharge();
     }
 

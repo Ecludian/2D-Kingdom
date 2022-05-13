@@ -1,0 +1,783 @@
+fileFormatVersion: 2
+guid: 12091629910a08649be0724064070629
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6769800271756308474
+    second: shelleffect_LPC_0
+  - first:
+      213: -8154310421836010913
+    second: shelleffect_LPC_1
+  - first:
+      213: 5690443202054241610
+    second: shelleffect_LPC_2
+  - first:
+      213: -1570197662367494352
+    second: shelleffect_LPC_3
+  - first:
+      213: -344109817904026534
+    second: shelleffect_LPC_4
+  - first:
+      213: -3153267075499850342
+    second: shelleffect_LPC_5
+  - first:
+      213: -612096835295920943
+    second: shelleffect_LPC_6
+  - first:
+      213: 8786367841945329096
+    second: shelleffect_LPC_7
+  - first:
+      213: -7055299751419259837
+    second: shelleffect_LPC_8
+  - first:
+      213: 8297144096391782653
+    second: shelleffect_LPC_9
+  - first:
+      213: -5398777578308806006
+    second: shelleffect_LPC_10
+  - first:
+      213: 7425505370241745362
+    second: shelleffect_LPC_11
+  - first:
+      213: -3122851765662147242
+    second: shelleffect_LPC_12
+  - first:
+      213: -2162873604879193240
+    second: shelleffect_LPC_13
+  - first:
+      213: 4937165937471301202
+    second: shelleffect_LPC_14
+  - first:
+      213: -916308511360915340
+    second: shelleffect_LPC_15
+  - first:
+      213: 160828153102766865
+    second: shelleffect_LPC_16
+  - first:
+      213: -7893211108681511360
+    second: shelleffect_LPC_17
+  - first:
+      213: -1919374491317596099
+    second: shelleffect_LPC_18
+  - first:
+      213: -5697742348328584286
+    second: shelleffect_LPC_19
+  - first:
+      213: 9164505595457095666
+    second: shelleffect_LPC_20
+  - first:
+      213: 3816062073284469685
+    second: shelleffect_LPC_21
+  - first:
+      213: -4894771702497541998
+    second: shelleffect_LPC_22
+  - first:
+      213: -8822418553593476557
+    second: shelleffect_LPC_23
+  - first:
+      213: -2852347305327074284
+    second: shelleffect_LPC_24
+  - first:
+      213: -7356591521752332974
+    second: shelleffect_LPC_25
+  - first:
+      213: -466724010316290990
+    second: shelleffect_LPC_26
+  - first:
+      213: 7263292322217191202
+    second: shelleffect_LPC_27
+  - first:
+      213: -2732650355129828906
+    second: shelleffect_LPC_28
+  - first:
+      213: -566358188245831076
+    second: shelleffect_LPC_29
+  - first:
+      213: -77607023409873127
+    second: shelleffect_LPC_30
+  - first:
+      213: -6884569625671656484
+    second: shelleffect_LPC_31
+  - first:
+      213: 1767174105350739045
+    second: shelleffect_LPC_32
+  - first:
+      213: 3858181094359981416
+    second: shelleffect_LPC_33
+  - first:
+      213: 1740548248304769395
+    second: shelleffect_LPC_34
+  - first:
+      213: 813228435861356608
+    second: shelleffect_LPC_35
+  - first:
+      213: -2193073807599114016
+    second: shelleffect_LPC_36
+  - first:
+      213: -8022228839554224470
+    second: shelleffect_LPC_37
+  - first:
+      213: -7050855202692963194
+    second: shelleffect_LPC_38
+  - first:
+      213: -7964848663678412847
+    second: shelleffect_LPC_39
+  - first:
+      213: -712780796074288488
+    second: shelleffect_LPC_40
+  - first:
+      213: -5192748306999725345
+    second: shelleffect_LPC_41
+  - first:
+      213: 8934252019882028372
+    second: shelleffect_LPC_42
+  - first:
+      213: -7184099355407156059
+    second: shelleffect_LPC_43
+  - first:
+      213: 6570578647509058314
+    second: shelleffect_LPC_44
+  - first:
+      213: 8678237821559078699
+    second: shelleffect_LPC_45
+  - first:
+      213: 6301292667686511464
+    second: shelleffect_LPC_46
+  - first:
+      213: -6200793271652533394
+    second: shelleffect_LPC_47
+  - first:
+      213: -1840933830742993514
+    second: shelleffect_LPC_48
+  - first:
+      213: 8352563897619898265
+    second: shelleffect_LPC_49
+  - first:
+      213: 4645429911792672228
+    second: shelleffect_LPC_50
+  - first:
+      213: -6072593845301563636
+    second: shelleffect_LPC_51
+  - first:
+      213: 843934566690645954
+    second: shelleffect_LPC_52
+  - first:
+      213: -2877555987987621506
+    second: shelleffect_LPC_53
+  - first:
+      213: 8676846049524589282
+    second: shelleffect_LPC_54
+  - first:
+      213: -391955170363956986
+    second: shelleffect_LPC_55
+  - first:
+      213: 7829621587709636325
+    second: shelleffect_LPC_56
+  - first:
+      213: 2206349234895548814
+    second: shelleffect_LPC_57
+  - first:
+      213: -6673344326739660640
+    second: shelleffect_LPC_58
+  - first:
+      213: -3024499992499653771
+    second: shelleffect_LPC_59
+  - first:
+      213: -2232506181233587910
+    second: shelleffect_LPC_60
+  - first:
+      213: -8464168259343993165
+    second: shelleffect_LPC_61
+  - first:
+      213: 4373191367076586532
+    second: shelleffect_LPC_62
+  - first:
+      213: 5053790957430949890
+    second: shelleffect_LPC_63
+  - first:
+      213: 7066343037183290141
+    second: shelleffect_LPC_64
+  - first:
+      213: -2727356458311245392
+    second: shelleffect_LPC_65
+  - first:
+      213: 519852262634402873
+    second: shelleffect_LPC_66
+  - first:
+      213: -1284607531918713822
+    second: shelleffect_LPC_67
+  - first:
+      213: -1838793330191179666
+    second: shelleffect_LPC_68
+  - first:
+      213: -6971147178446888669
+    second: shelleffect_LPC_69
+  - first:
+      213: 5113169434943896935
+    second: shelleffect_LPC_70
+  - first:
+      213: 5607633235153845205
+    second: shelleffect_LPC_71
+  - first:
+      213: 269890193654220541
+    second: shelleffect_LPC_72
+  - first:
+      213: 7284123618896912835
+    second: shelleffect_LPC_73
+  - first:
+      213: -6580631666842062069
+    second: shelleffect_LPC_74
+  - first:
+      213: -771686081749408279
+    second: shelleffect_LPC_75
+  - first:
+      213: -76261679629543381
+    second: shelleffect_LPC_76
+  - first:
+      213: -1714760136951735120
+    second: shelleffect_LPC_77
+  - first:
+      213: 1228164387480012006
+    second: shelleffect_LPC_78
+  - first:
+      213: -8021784207903786078
+    second: shelleffect_LPC_79
+  - first:
+      213: 5664986310215072168
+    second: shelleffect_LPC_80
+  - first:
+      213: -8557671525424440331
+    second: shelleffect_LPC_81
+  - first:
+      213: 8056776662031658197
+    second: shelleffect_LPC_82
+  - first:
+      213: -1591843179834918061
+    second: shelleffect_LPC_83
+  - first:
+      213: 4154430143102637865
+    second: shelleffect_LPC_84
+  - first:
+      213: 4404899946100254630
+    second: shelleffect_LPC_85
+  - first:
+      213: 2064705991573006369
+    second: shelleffect_LPC_86
+  - first:
+      213: 5265158629770458456
+    second: shelleffect_LPC_87
+  - first:
+      213: -895800523847792191
+    second: shelleffect_LPC_88
+  - first:
+      213: 9102641898302101181
+    second: shelleffect_LPC_89
+  - first:
+      213: 1078411864324314368
+    second: shelleffect_LPC_90
+  - first:
+      213: 3170140752489336000
+    second: shelleffect_LPC_91
+  - first:
+      213: 6414103130277532538
+    second: shelleffect_LPC_92
+  - first:
+      213: -7482470340781335319
+    second: shelleffect_LPC_93
+  - first:
+      213: 688803768524657710
+    second: shelleffect_LPC_94
+  - first:
+      213: -4189743956894041119
+    second: shelleffect_LPC_95
+  - first:
+      213: -3575289077288610956
+    second: shelleffect_LPC_96
+  - first:
+      213: -6961232449468419936
+    second: shelleffect_LPC_97
+  - first:
+      213: 8928731453335266189
+    second: shelleffect_LPC_98
+  - first:
+      213: 310502842433827783
+    second: shelleffect_LPC_99
+  - first:
+      213: 7355145134852473085
+    second: shelleffect_LPC_100
+  - first:
+      213: 4030954237488978998
+    second: shelleffect_LPC_101
+  - first:
+      213: 1885062222146056199
+    second: shelleffect_LPC_102
+  - first:
+      213: -4753375346969733431
+    second: shelleffect_LPC_103
+  - first:
+      213: 2480109083344475250
+    second: shelleffect_LPC_104
+  - first:
+      213: 6898119664482025974
+    second: shelleffect_LPC_105
+  - first:
+      213: 5954091049874325744
+    second: shelleffect_LPC_106
+  - first:
+      213: 7082720885989975934
+    second: shelleffect_LPC_107
+  - first:
+      213: -3149607565428626743
+    second: shelleffect_LPC_108
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shelleffect_LPC_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affa06eaa7923fd50800000000000000
+      internalID: 6769800271756308474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ae23eefd116de80800000000000000
+      internalID: -8154310421836010913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4dbaf861f388fe40800000000000000
+      internalID: 5690443202054241610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fcf6b9b89853ae0800000000000000
+      internalID: -1570197662367494352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c2b1c91f9793bf0800000000000000
+      internalID: -344109817904026534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9585e23d485d34d0800000000000000
+      internalID: -3153267075499850342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcbb0cdb256187f0800000000000000
+      internalID: -612096835295920943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd111500037fe970800000000000000
+      internalID: 8786367841945329096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344d0c4b14a861e90800000000000000
+      internalID: -7055299751419259837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df069a37890652370800000000000000
+      internalID: 8297144096391782653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a5f8f7560b315b0800000000000000
+      internalID: -5398777578308806006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1c30fcac1bc0760800000000000000
+      internalID: 7425505370241745362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d918d5dd669a4d0800000000000000
+      internalID: -3122851765662147242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b6b1f6aedebf1e0800000000000000
+      internalID: -2162873604879193240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256a22c0346548440800000000000000
+      internalID: 4937165937471301202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelleffect_LPC_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4786aa3834e9843f0800000000000000
+      internalID: -916308511360915340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

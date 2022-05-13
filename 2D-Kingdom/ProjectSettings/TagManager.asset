@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Item
+  - NPC
+  - Nest
+  - Hole
   layers:
   - Default
   - TransparentFX
@@ -11,10 +16,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemies
+  - Items
+  - Character Collision Blocker
   - 
   - 
   - 
@@ -38,6 +43,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Maps
+    uniqueID: 1628171501
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Items
+    uniqueID: 554023505
     locked: 0

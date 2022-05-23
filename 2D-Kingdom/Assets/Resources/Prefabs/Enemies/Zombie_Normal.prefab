@@ -276,7 +276,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d7e9c5fa3dba290468c45ca8dc9050e4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -516,6 +516,8 @@ MonoBehaviour:
   moveSpeed: 3
   healthPoint: 300
   atkSpeed: 2
+  spawner: {fileID: 0}
+  slotNum: 0
 --- !u!1 &2724863845212061967
 GameObject:
   m_ObjectHideFlags: 0

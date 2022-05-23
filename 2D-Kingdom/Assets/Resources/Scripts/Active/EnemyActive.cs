@@ -203,7 +203,6 @@ public class EnemyActive : MonoBehaviour
         enemyAnim.SetFloat("AxisY", vector.y);
     }
 
- 
 
     private void Update()
     {

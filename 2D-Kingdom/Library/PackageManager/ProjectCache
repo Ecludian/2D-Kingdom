@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637881091263217211
-    m_Hash: 456422514
+      ticks: 637889254089568367
+    m_Hash: 815887552
   m_LockFileStatus:
     m_FilePath: D:/GameDev/Project/2D-Kingdom/2D-Kingdom/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637881091271774442
-    m_Hash: 1570067785
+      ticks: 637889254089558390
+    m_Hash: 2568875995
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

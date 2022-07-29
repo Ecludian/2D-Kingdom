@@ -102,7 +102,7 @@ public enum SkillSet
 
 public enum DamageState
 {
-    Default, PlayerPhs, PlayerMag, EnemyPhs, AllyHeal
+    Default, PlayerPhs, PlayerMag, EnemyPhs, AllyHeal, OzMag
 }
 
 public enum ItemSet

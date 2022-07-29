@@ -34,6 +34,10 @@ public class DamageActive : MonoBehaviour
                 textColor = Color.green;
                 moveVector = new Vector3(Random.Range(-0.5f, -1.5f), 1) * Random.Range(4f, 6f);
                 break;
+            case DamageState.OzMag:
+                textColor = Color.magenta;
+                moveVector = new Vector3(Random.Range(0.5f, 1.5f), 1) * Random.Range(4f, 6f);
+                break;
 
         }
         txtPopup.SetText(damage.ToString());

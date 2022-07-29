@@ -2,9 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using Pathfinding;
 
 public class EnemyActive : MonoBehaviour
 {
+    //AI PATHFINDING
+    public float nextWaypointDistance = 3f;
+
+    Path path;
+    int currentwayPoint = 0;
+    bool reachedEndOfPath = false;
+
+    Seeker seeker;
+
     public Transform Target;
     public UnitState State;
     public EnemySet Creep;
@@ -30,7 +40,10 @@ public class EnemyActive : MonoBehaviour
         enemyAnim = GetComponent<Animator>();
         enemyAudio = GetComponent<AudioSource>();
 
+
     }
+
+ 
     private void Enemy_Attack()
     {
         var player = Target.GetComponent<PlayerActive>();
@@ -66,16 +79,17 @@ public class EnemyActive : MonoBehaviour
     {
         var moveToward = Vector3.MoveTowards(transform.position, Target.position, moveSpeed * Time.deltaTime);
 
-        var towardPos = moveToward - transform.position;
-        ChangeDirection(towardPos, isForward); //try without trransform position
-        if (isForward)
-        {
-            transform.position += towardPos;
-        }
-        else
-        {
-            transform.position -= towardPos;
-        }
+          var towardPos = moveToward - transform.position;
+          ChangeDirection(towardPos, isForward); //try without trransform position
+          if (isForward)
+          {
+              transform.position += towardPos;
+          }
+          else
+          {
+              transform.position -= towardPos;
+          }
+
         enemyAnim.SetBool("isMoving", true);
         State = UnitState.Move;
     }
@@ -207,7 +221,8 @@ public class EnemyActive : MonoBehaviour
     private void Update()
     {
         Enemy_Death();
-      
+
+     
     }
     private void FixedUpdate()
     {
@@ -240,6 +255,9 @@ public class EnemyActive : MonoBehaviour
                     }
                 }
             }
+
+            
+
         }
 
         if(attackTime > 0f)

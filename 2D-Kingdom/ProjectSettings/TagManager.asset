@@ -21,7 +21,7 @@ TagManager:
   - Items
   - Character Collision Blocker
   - PointLight
-  - 
+  - Obstacle
   - 
   - 
   - 
@@ -45,6 +45,12 @@ TagManager:
   m_SortingLayers:
   - name: Maps
     uniqueID: 1628171501
+    locked: 0
+  - name: Interior_Maps
+    uniqueID: 2961652315
+    locked: 0
+  - name: Interior_Default
+    uniqueID: 537435093
     locked: 0
   - name: Default
     uniqueID: 0
